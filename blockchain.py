@@ -294,7 +294,7 @@ def get_merkle_root(child_hashes):
 			child_hashes += [child_hashes[len(child_hashes) - 1]]
 
 		# number of pairs of children
-		num_pair = (len(child_hashes) + 1) / 2
+		num_pair = len(child_hashes) / 2
 
 		# compute parent hash for each children pair hashes
 		for i in range(0, num_pair):
